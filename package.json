@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "seed": "tsx scripts/seed.ts"
+    "seed": "tsx --env-file=.env.local scripts/seed.ts"
   },
   "dependencies": {
     "@auth/pg-adapter": "^1.11.2",
@@ -27,7 +27,7 @@
     "@types/react-dom": "^19.1.0",
     "@types/three": "^0.170.0",
     "cheerio": "^1.0.0",
-    "tsx": "^4.19.0",
+    "tsx": "^4.21.0",
     "typescript": "~5.7.0"
   }
 }
