@@ -1,0 +1,118 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 14px 20px 10px;
+  background: rgba(10, 22, 40, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1.5px solid rgba(200, 154, 58, 0.3);
+  transition: left 0.3s ease, right 0.3s ease;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Caveat', cursive;
+  font-size: 28px;
+  font-weight: 700;
+  color: #f4efe2;
+  margin: 0;
+  line-height: 1;
+}
+
+.subtitle {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 11px;
+  color: #8a93a3;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 2px;
+}
+
+.right {
+  text-align: right;
+}
+
+.count {
+  display: block;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 13px;
+  font-weight: 700;
+  color: #f4efe2;
+}
+
+.pct {
+  font-family: 'Cutive Mono', monospace;
+  font-size: 10px;
+  color: #8a93a3;
+}
+
+.barOuter {
+  margin-top: 10px;
+  height: 4px;
+  background: rgba(44, 93, 128, 0.3);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.barInner {
+  height: 100%;
+  background: linear-gradient(90deg, #2c5d80, #c89a3a);
+  border-radius: 2px;
+  transition: width 0.5s ease;
+}
+
+.backBtn {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 2px 8px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 11px;
+  color: #c8472b;
+  background: transparent;
+  border: 1px solid rgba(200, 71, 43, 0.4);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.backBtn:hover {
+  background: rgba(200, 71, 43, 0.1);
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1.5px solid rgba(200, 154, 58, 0.4);
+}
+
+.signOutBtn {
+  padding: 2px 8px;
+  font-family: 'Cutive Mono', monospace;
+  font-size: 11px;
+  color: #8a93a3;
+  background: transparent;
+  border: 1px solid rgba(138, 147, 163, 0.3);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.signOutBtn:hover {
+  color: #f4efe2;
+  border-color: rgba(200, 154, 58, 0.4);
+}
